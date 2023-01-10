@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Dosis&family=Exo+2:wght@100&display=swap'); 
+/* font-family: 'Cinzel', serif;
+font-family: 'Dosis', sans-serif;
+font-family: 'Exo 2', sans-serif;
+ */
+ 
+
+ h1 {
+  padding: 0px;
+  margin: 0px;
+}
+
+
+
+.App {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image:url('assets/neonbg.gif');
+  background-size:100%;
+  background-repeat: repeat-y;
+  background-attachment: fixed; 
+}
+
+
+
+.Title{
+  position: absolute;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  width: 500px;
+
+  background-image: linear-gradient(to bottom right, rgb(255, 0, 255), rgb(206, 42, 165), rgb(255, 164, 232));
+  outline-style: solid;
+  outline-width: 3px;
+  outline-color: #000000;
+  border-radius: 0px 0px 30px 0px;
+}
+
+.DGG{
+  font-family: 'Cinzel', serif;  
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  
+  padding-bottom: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+.Author{
+  font-family: 'Cinzel', serif;  
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+
+  margin-left: 0px;
+  padding-bottom: 5px;
+}
+
+.ButtonContainer {
+  font-family: 'Cinzel', serif;  
+  font-size: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  color: rgb(255, 0, 212);
+  background: rgb(255,0,0);
+  background: radial-gradient(ellipse, #000000 0%, rgba(255,255,255,0) 70%);
+  border-radius: 20px;
+  outline-style: solid;
+  outline-width: 3px;
+  outline-color: rgba(0, 0, 0, 0);
+  
+  width: 400px;
+  height: 100px;
+}
+
+.Buttons {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+}
+
+
+
+
