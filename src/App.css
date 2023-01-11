@@ -86,6 +86,16 @@ h1, h2 {
   height: 100px;
 }
 
+.EngineMain {
+  height: 100vh;
+  display: flex;
+  font-family: 'Cinzel', serif;
+  background-image:url('assets/aboutbg.gif');
+  background-size:100%;
+  background-repeat: repeat-y;
+  background-attachment: fixed; 
+}
+
 .AboutContainer {
   height: 100vh;
   display: flex;
@@ -99,15 +109,22 @@ h1, h2 {
 }
 
 .AboutTextContainer {
+  color: rgb(255, 255, 255);
   margin-top: 20vh;
   display: flex;
   align-items: center;
   flex-direction: column;
   flex: 1;
+  background: radial-gradient(ellipse, #000000 0%, #000000 20%, rgba(0, 0, 0, 0) 70%);
 }
 
 .BodyParagraphTitle {
   margin-bottom: 5vh;
+}
+
+.BodyParagraph {
+  width: 50%;
+  text-align: center;
 }
 
 
