@@ -1,7 +1,6 @@
 function Games(){
     return(
         <div className="GamesMain">
-
         </div>
     )
 }
