@@ -2,10 +2,10 @@
     height: 100vh;
     display: flex;
     font-family: 'Cinzel', serif;
-    font-size: 20px; 
+    font-size: 30px; 
     color: white;
-    background-image:url('../assets/aboutbg.gif');
-    background-size:100%;
+    background-image: url('../assets/aboutbg.gif');
+    background-size: 100%;
     background-repeat: repeat-y;
     background-attachment: fixed; 
 }
@@ -13,21 +13,26 @@
 
 .TextContainer {
     color: rgb(255, 255, 255);
-    margin-top: 20vh;
+    margin-top: 10vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     flex: 1;
-    background: radial-gradient(ellipse, #000000 0%, #000000 20%, rgba(0, 0, 0, 0) 70%);
 }
 
 
-.Title {
+.AboutTitle {
     margin-bottom: 5vh;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.575);
+    box-shadow: 0 0 8px 8px rgb(255, 255, 255) inset;
 }
 
 
 .Paragraph {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.575);
+    box-shadow: 0 0 8px 8px white inset;
     width: 50%;
     text-align: center;
 }

@@ -4,7 +4,7 @@ function About(){
     return (
         <div className="About">
             <div className="TextContainer">
-                <div className="Title">
+                <div className="AboutTitle">
                     <h1>About the project</h1>
                 </div>
                 <div className="Paragraph">

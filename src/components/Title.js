@@ -1,16 +1,16 @@
 import '../styles/Title.css';
-// import '../index.css'
+import { Link } from 'react-router-dom'
 
 function Title(){
     return (
-        <div className="Title">
+        <Link to={"/"} className='Title'>
             <div className="DGG">
                 <h1>DreamGameGuesser</h1>
             </div>
             <div className="Author">
-                By Michael Papadopoulos
+                <h4>By Michael Papadopoulos</h4>
             </div>
-        </div>
+        </Link>
     )
 }
 

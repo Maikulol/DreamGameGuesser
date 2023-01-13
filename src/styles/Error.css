@@ -2,7 +2,30 @@
     height: 100vh;
     display: flex;
     font-family: 'Cinzel', serif;
-    background-size:100%;
-    background-repeat: repeat-y;
-    background-attachment: fixed; 
+    font-size: 100px; 
+    color: white;
+    background: rgb(162,0,255);
+    background: radial-gradient(circle, rgba(162,0,255,1) 0%, rgba(252,70,107,1) 100%);
+}
+
+
+.ErrorContainer {
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+}
+
+
+.ErrorMessage {
+    margin-bottom: 5vh;
+}
+
+
+.ErrorExplanation {
+    font-size: 50px;
+    width: 50%;
+    text-align: center;
 }
