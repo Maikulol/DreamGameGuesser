@@ -1,14 +1,15 @@
 import './App.css';
-import Button from './components/Button';
+import Title from './components/Title'
+import Home from './components/Home';
+import Engine from './components/Engine';
+import Games from './components/Games';
+import About from './components/About';
 
 function App() {
   return (
     <div className="App">
-      <div className='Buttons'>
-        <Button text="Engine"/>
-        <Button text="Games"/>
-        <Button text="About"/>
-      </div>
+      <Title/>
+      <Home/>
     </div>
   );
 }

@@ -1,0 +1,8 @@
+.Error {
+    height: 100vh;
+    display: flex;
+    font-family: 'Cinzel', serif;
+    background-size:100%;
+    background-repeat: repeat-y;
+    background-attachment: fixed; 
+}

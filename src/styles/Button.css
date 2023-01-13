@@ -1,0 +1,21 @@
+.ButtonContainer {
+    font-family: 'Cinzel', serif;  
+    font-size: 80px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: rgb(255, 0, 212);
+    background: rgb(255,0,0);
+    background: radial-gradient(ellipse, #000000 0%, rgba(255,255,255,0) 70%);
+    border-radius: 20px;
+    outline-style: solid;
+    outline-width: 3px;
+    outline-color: rgba(0, 0, 0, 0);
+    
+    width: 400px;
+    height: 100px;
+}
+
+

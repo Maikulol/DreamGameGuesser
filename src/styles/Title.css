@@ -1,0 +1,37 @@
+.Title{
+    position: absolute;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  
+    width: 325px;
+  
+    background-image: linear-gradient(to bottom right, rgb(255, 0, 255), rgb(206, 42, 165), rgb(255, 164, 232));
+    outline-style: solid;
+    outline-width: 3px;
+    outline-color: #000000;
+    border-radius: 0px 0px 20px 0px;
+}
+
+
+.DGG{
+    font-family: 'Cinzel', serif;
+    font-size: 14px;
+    color: black;
+  
+    padding-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+
+.Author{
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+  
+    margin-left: 0px;
+    padding-bottom: 5px;
+}
+

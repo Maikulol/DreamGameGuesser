@@ -1,6 +1,8 @@
+import '../styles/Engine.css'
+
 function Engine(){
     return(
-        <div className="EngineMain">
+        <div className="Engine">
 
         </div>
     )

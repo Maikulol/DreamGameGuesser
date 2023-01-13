@@ -1,3 +1,5 @@
+import '../styles/Button.css';
+
 function Button(props){
     return (
         <div className="ButtonContainer">

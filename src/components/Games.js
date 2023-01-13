@@ -1,6 +1,9 @@
+import '../styles/Games.css'
+
 function Games(){
     return(
-        <div className="GamesMain">
+        <div className="Games">
+
         </div>
     )
 }
