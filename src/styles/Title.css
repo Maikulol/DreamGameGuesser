@@ -1,12 +1,14 @@
 .Title{
-    position: absolute;
+    font-family: 'Press Start 2P', cursive; 
+    position: fixed;
     align-items: center;
     display: flex;
     flex-direction: column;
   
     width: 325px;
   
-    background-image: linear-gradient(to bottom right, rgb(255, 0, 255), rgb(206, 42, 165), rgb(255, 164, 232));
+    /* background-image: linear-gradient(to bottom right, rgb(255, 0, 255), rgb(206, 42, 165), rgb(255, 164, 232)); */
+    background-color: rgb(255, 0, 212);
     outline-style: solid;
     outline-width: 3px;
     outline-color: #000000;
@@ -15,21 +17,18 @@
 
 
 .DGG{
-    font-family: 'Cinzel', serif;
-    font-size: 14px;
+    font-size: 10px;
     color: black;
-  
-    padding-bottom: 0px;
-    margin-left: 0px;
-    margin-top: 0px;
+
+    padding-top: 5px;
+    padding-bottom: 3px;
 }
 
 
 .Author{
-    font-family: 'Cinzel', serif;
     font-weight: bold;
     color: rgb(0, 0, 0);
-    font-size: 14px;
+    font-size: 10px;
   
     margin-left: 0px;
     padding-bottom: 5px;

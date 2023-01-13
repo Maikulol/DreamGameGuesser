@@ -1,43 +1,27 @@
 .About {
     height: 100vh;
     display: flex;
-    font-family: 'Cinzel', serif;
+    font-family: 'Press Start 2P', cursive; 
     font-size: 30px; 
-    color: white;
     background-image: url('../assets/aboutbg.gif');
     background-size: 100%;
-    background-repeat: repeat-y;
+    background-repeat: repeat; 
     background-attachment: fixed; 
+    line-height: 40px;
+    animation: AboutSlide 1000s linear infinite;
 }
 
-/* .About {
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    font-family: 'Cinzel', serif;
-    font-size: 30px; 
-    color: white;
-    background-image: url('../assets/aboutbg.gif');
-    background-repeat: repeat;
-    background-position: 0 0;
-    background-size: auto 100%;
-    animation: animatedBackground 1000s linear infinite;
-}
-  
-@keyframes animatedBackground {
+@keyframes AboutSlide {
     from {
       background-position: 0 0;
-    }
-  /*use negative width if you want it to flow right to left else and positive for left to right*/
-    /* to {
+  }
+  to {
       background-position: -10000px 0;
-    }
-} */
+  }
+}
 
 .TextContainer {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 0, 212);
     margin-top: 10vh;
     display: flex;
     align-items: center;
@@ -48,17 +32,20 @@
 
 .AboutTitle {
     margin-bottom: 5vh;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.575);
-    box-shadow: 0 0 8px 8px rgb(255, 255, 255) inset;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 8px 8px rgb(255, 0, 212) inset;
 }
 
 
 .Paragraph {
+    overflow-y: auto;
+    overflow-x: hidden;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.575);
-    box-shadow: 0 0 8px 8px white inset;
+    background: rgb(0, 0, 0, .7);
+    box-shadow: 0 0 8px 8px rgb(255, 0, 212) inset;
     width: 50%;
+    height: 50vh;
     text-align: center;
 }
 
