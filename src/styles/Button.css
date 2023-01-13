@@ -1,10 +1,17 @@
 .ButtonContainer {
     font-family: 'Cinzel', serif;  
     font-size: 80px;
-  
+
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    /* 
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 0, 212);
+    text-decoration-style: double;
+    text-decoration-thickness: 3px; 
+    */
     
     color: rgb(255, 0, 212);
     background: rgb(255,0,0);
@@ -14,7 +21,7 @@
     outline-width: 3px;
     outline-color: rgba(0, 0, 0, 0);
     
-    width: 400px;
+    width: 350px;
     height: 100px;
 }
 

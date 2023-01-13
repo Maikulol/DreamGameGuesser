@@ -16,7 +16,6 @@
 }
 
 .ButtonLink:hover {
-    text-decoration: none;
     animation: popout .3s ease forwards;
     -webkit-animation: popout .3s ease forwards;
 }

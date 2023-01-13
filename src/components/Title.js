@@ -1,5 +1,5 @@
 import '../styles/Title.css';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 function Title(){
     return (

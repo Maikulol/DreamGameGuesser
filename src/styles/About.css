@@ -10,6 +10,31 @@
     background-attachment: fixed; 
 }
 
+/* .About {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    font-family: 'Cinzel', serif;
+    font-size: 30px; 
+    color: white;
+    background-image: url('../assets/aboutbg.gif');
+    background-repeat: repeat;
+    background-position: 0 0;
+    background-size: auto 100%;
+    animation: animatedBackground 1000s linear infinite;
+}
+  
+@keyframes animatedBackground {
+    from {
+      background-position: 0 0;
+    }
+  /*use negative width if you want it to flow right to left else and positive for left to right*/
+    /* to {
+      background-position: -10000px 0;
+    }
+} */
 
 .TextContainer {
     color: rgb(255, 255, 255);
