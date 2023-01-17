@@ -1,21 +1,26 @@
 .Error {
     height: 100vh;
+
     display: flex;
+
+    background: rgb(162,0,255);
+    background: radial-gradient(circle, rgba(162,0,255,1) 0%, rgba(252,70,107,1) 100%);
+    
     font-family: 'Cinzel', serif;
     font-size: 100px; 
     color: white;
-    background: rgb(162,0,255);
-    background: radial-gradient(circle, rgba(162,0,255,1) 0%, rgba(252,70,107,1) 100%);
 }
 
 
 .ErrorContainer {
-    color: rgb(0, 0, 0);
     display: flex;
-    align-items: center;
     flex-direction: column;
     flex: 1;
+
+    align-items: center;
     justify-content: center;
+
+    color: rgb(0, 0, 0);
 }
 
 
@@ -25,7 +30,9 @@
 
 
 .ErrorExplanation {
-    font-size: 50px;
     width: 50%;
+
     text-align: center;
+    
+    font-size: 50px;
 }

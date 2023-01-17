@@ -6,8 +6,13 @@ font-family: 'Exo 2', sans-serif;
 font-family: 'Press Start 2P', cursive;
  */
 
- h1, h2, h4 {
-  padding: 0px;
-  margin: 0px;
+ h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: inside;
+}

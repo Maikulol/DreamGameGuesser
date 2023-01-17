@@ -1,14 +1,15 @@
 .About {
     height: 100vh;
     display: flex;
-    font-family: 'Press Start 2P', cursive; 
-    font-size: 30px; 
+    
     background-image: url('../assets/aboutbg.gif');
     background-size: 100%;
     background-repeat: repeat; 
     background-attachment: fixed; 
-    line-height: 40px;
+
     animation: AboutSlide 1000s linear infinite;
+
+    font-family: 'Press Start 2P', cursive; 
 }
 
 @keyframes AboutSlide {
@@ -21,32 +22,52 @@
 }
 
 .TextContainer {
-    color: rgb(255, 0, 212);
-    margin-top: 10vh;
     display: flex;
-    align-items: center;
     flex-direction: column;
     flex: 1;
+    margin-top: 5vh;
+
+    line-height: 40px;
+    align-items: center;
+
+    color: rgb(255, 0, 212);
 }
 
 
 .AboutTitle {
-    margin-bottom: 5vh;
-    padding: 30px;
     background: rgba(0, 0, 0, 0.7);
     box-shadow: 0 0 8px 8px rgb(255, 0, 212) inset;
+
+    margin-bottom: 5vh;
+    padding: 30px;
+
+    font-size: 26px;
 }
 
 
 .Paragraph {
-    overflow-y: auto;
-    overflow-x: hidden;
-    padding: 20px;
+    width: 70%;
+    height: 70vh;
+    text-align: center;
+
     background: rgb(0, 0, 0, .7);
     box-shadow: 0 0 8px 8px rgb(255, 0, 212) inset;
-    width: 50%;
-    height: 50vh;
-    text-align: center;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    padding: 20px;
 }
 
+.AboutHeaders {
+    font-size: 30px;
+
+    color: rgb(0, 238, 255);
+}
+
+.ParagraphText {
+    font-size: 20px;
+
+    margin-bottom: 60px;
+}
 

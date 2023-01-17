@@ -3,14 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Title from './components/Title';
+
 
 
 // This is used to route the website and its pages and assign them URLS
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <Title/> */}
     <App/>
   </React.StrictMode>
 );

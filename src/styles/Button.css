@@ -1,28 +1,23 @@
 .ButtonContainer {
-    font-family: 'Press Start 2P', cursive; 
-    font-size: 55px;
+    width: 350px;
+    height: 100px;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    /* 
-    text-decoration: underline;
-    text-decoration-color: rgb(255, 0, 212);
-    text-decoration-style: double;
-    text-decoration-thickness: 3px; 
-    */
-    
+
+    font-family: 'Press Start 2P', cursive; 
+    font-size: 55px;
+
     color: rgb(255, 0, 212);
+    
     background: rgb(255,0,0);
     background: radial-gradient(ellipse, #000000 0%, rgba(255,255,255,0) 70%);
+    
     border-radius: 20px;
     outline-style: solid;
     outline-width: 3px;
     outline-color: rgba(0, 0, 0, 0);
-    
-    width: 350px;
-    height: 100px;
 }
 
 

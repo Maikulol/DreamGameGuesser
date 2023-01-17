@@ -1,8 +1,11 @@
 .Home {
     height: 100vh;
+
     display: flex;
+
     align-items: center;
     justify-content: center;
+
     background-image:url('../assets/neonbg.gif');
     background-size:100%;
     background-repeat: repeat-y;
@@ -12,6 +15,7 @@
 .Buttons {
     display: flex;
     flex: 1;
+    
     justify-content: space-evenly;
 }
 
