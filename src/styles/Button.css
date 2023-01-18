@@ -10,8 +10,6 @@
     font-size: 55px;
 
     color: rgb(255, 0, 212);
-    
-    background: rgb(255,0,0);
     background: radial-gradient(ellipse, #000000 0%, rgba(255,255,255,0) 70%);
     
     border-radius: 20px;
