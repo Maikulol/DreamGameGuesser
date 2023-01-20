@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 
 
-// This is used to route the website and its pages and assign them URLS
+// This is the root of the entire website. Look at App.js for more...
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

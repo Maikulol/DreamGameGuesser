@@ -1,5 +1,7 @@
 import '../styles/About.css';
 
+// The about page. Does not contain anything fancy, just like the error page.
+// Has way too much text in it's divs and looks super messy. Sigh.
 function About(){
     return (
         <div className="About">

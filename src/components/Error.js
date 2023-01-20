@@ -1,5 +1,6 @@
 import '../styles/Error.css'
 
+// The error page. Pretty straight forward, doesnt really have any complexity to it.
 function Error(){
     return(
         <div className='Error'>

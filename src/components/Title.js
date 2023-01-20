@@ -1,6 +1,7 @@
 import '../styles/Title.css';
 import { Link } from 'react-router-dom';
 
+// Creating the title component that acts as the website logo in the top left corner.
 function Title(){
     return (
         <Link to={"/"} className='Title'>
