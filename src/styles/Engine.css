@@ -22,22 +22,22 @@
     display: flex;
     flex-direction: column;
 
-    margin-top: 14vh;
+    margin-top: 9vh;
     text-align: center;
 }
 
 
 .EngineTitle {
     font-size: 35px;
-    background: linear-gradient(to bottom, #cfc09f 22%, #cfc09f 26%, #cfc09f 27%,#ffecb3 40%,#3a2c0f 78%); 
+    background: linear-gradient(to bottom, #cfc09f 22%, #cfc09f 26%, #cfc09f 27%,#ffecb3 40%,#5b4210 78%); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 12vh;
+    margin-bottom: 5vh;
 }
 
 .EngineProcessing {
     width: 100%;
-    height: 70%;
+    height: 100%;
     display: flex;
     flex-direction: row;
 }
@@ -46,12 +46,18 @@
     padding: 0px;
     flex: 1;
     background-image:url('../assets/EngineRobot.gif');
-    background-size: 350px;
+    background-size: 500px;
     background-repeat: no-repeat;
     /* background-color: red; */
 }
 
-.EngineText {
+.EngineTextBox {
+    border-style: solid;
+    border-color: rgb(0, 238, 255);
     flex: 2;
-    background-color: green;
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+    align-items: center;
+    background-color: rgba(255, 0, 212, 0.5);
 }

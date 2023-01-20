@@ -9,7 +9,11 @@ function Engine(){
                 </div>
                 <div className='EngineProcessing'>
                     <div className='EngineRobot'/>
-                    <div className='EngineText'/>
+                    <div className='EngineTextBox'>
+                        <h1 className='EngineText'>
+                            This is test text
+                        </h1>
+                    </div>
                 </div>
             </div>
         </div>
