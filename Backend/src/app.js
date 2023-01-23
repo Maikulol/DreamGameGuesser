@@ -13,7 +13,7 @@ app.use("/", router);
 
 // 404 error
 app.use((req, res, next) => {
-    next(new ServerError("not found", 404));
+    next(new Error("not found", 404));
 });
 
 // Error handling
