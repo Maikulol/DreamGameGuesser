@@ -6,7 +6,7 @@ function Engine(){
         <div className="Engine">
             <div className='EngineContainer'>
                 <div className='EngineTitle'>
-                    <h1>THE GAME GUESSER</h1>
+                    <h1 className="rainbow rainbow_text_animated">THE GAME GUESSER</h1>
                 </div>
                 <div className='EngineProcessing'>
                     <div className='EngineRobot'>

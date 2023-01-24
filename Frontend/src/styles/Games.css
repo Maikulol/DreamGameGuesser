@@ -27,7 +27,9 @@
     width: 264px;
 
     display: flex;
+    overflow: hidden;
     
+    text-align: center;
     align-items: center;
     justify-content: center;
 
@@ -39,6 +41,13 @@
     border-style: solid;
     border-color: rgb(0, 238, 255);
     background-color: rgb(255, 0, 212);
+}
+
+
+.cover {
+    flex-shrink: 0;
+    min-height: 100%;
+    min-width: 100%;
 }
 
 

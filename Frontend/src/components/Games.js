@@ -2,6 +2,7 @@ import '../styles/Games.css'
 import Game from './Game'
 import SearchBar from './SearchBar'
 import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 
 // The component that is the entire games page.
@@ -10,23 +11,20 @@ function Games(){
     // Using useState to allow our variables to interact with our search bar.
     const [list, setList] = useState([])
     const [userInput, updateValue] = useState("")
-    const [fullList, setFullList] = useState([{
-        title: "Valorant",
-        url: "www.someurl.com"
-    }, {
-        title: "CSGO",
-        url: "www.csgo.com"
-    }, {
-        title: "Rocket League",
-        url: "www.rl.com"
-    }])
+    const [fullList, setFullList] = useState([])
     
-    //TODO: make api request to custom backend
+    // Makes API call from frontend to backend to retrieve array of games
+    // Updates the state to store the array of games
+    const fetchGames = async () => {
+        const result = await axios.get("http://localhost:8080/games")
+        setFullList(result.data)
+    }
 
-    // useEffect(async () => {
-    //     const result = axios.get("url")
-    //     console.log(result)
-    // }, [])
+    // Calls the fetchGames function
+    useEffect(() => {
+        fetchGames()
+    }, [])
+
     
     // Checks to see if the search bar is blank or not.
     // If the search bar is blank, it will leave the list of games the same.
@@ -34,7 +32,7 @@ function Games(){
     // of games to a new list that matches the search bars input. It is not case sensitive.
     useEffect(() => {
         if(userInput !== ""){
-            setList(fullList.filter(game => game.title.toLowerCase().includes(userInput.toLowerCase())))
+            setList(fullList.filter(game => game.name.toLowerCase().includes(userInput.toLowerCase())))
         } else {
             setList(fullList)
         }
@@ -49,7 +47,7 @@ function Games(){
             </div>
             <div className='GamesListContainer'>
                 <ul className="GamesList">
-                    {list.map((game, index) => <Game title={game.title} imageUrl={game.url}/>)}
+                    {list.map((game, index) => <Game name={game.name} imageUrl={game.cover} url={game.url}/>)}
                 </ul>
             </div>
         </div>
