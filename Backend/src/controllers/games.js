@@ -7,7 +7,7 @@ require("dotenv").config()
 exports.getGames = async (req, res, next) => {
     try {
         // Calls the IGDB API with specific parameters
-        // Requests the name, cover art, website, and genres of the games
+        // Requests the name, cover art, website url, game modes, ratings and genres of the games
         // Only requests games with a rating/aggregated rating of 85 or above, 
         // as well as games that are released past 2005, and are considered the main game (Excludes dlcs, extra content, etc...)
         // Will pull 500 games from the site
@@ -19,7 +19,7 @@ exports.getGames = async (req, res, next) => {
                 "Client-ID": process.env.IGDB_CLIENT_ID,
                 "Authorization": `Bearer ${process.env.IGDB_ACCESS_TOKEN}`,
             },
-            data: "fields name, cover, url, genres, rating, aggregated_rating; where aggregated_rating >= 80 & rating >= 80 & category = 0 & first_release_date > 1104555600 & themes != 42; sort rating desc; limit 500;"
+            data: "fields name, cover, url, genres, rating, aggregated_rating, game_modes; where aggregated_rating >= 80 & rating >= 80 & category = 0 & first_release_date > 1104555600 & themes != 42; sort rating desc; limit 500;"
             
         });
 

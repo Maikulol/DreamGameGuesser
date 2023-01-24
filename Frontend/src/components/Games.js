@@ -20,7 +20,7 @@ function Games(){
         setFullList(result.data)
     }
 
-    // Calls the fetchGames function
+    // Engline logic on which questions to ask
     useEffect(() => {
         fetchGames()
     }, [])
@@ -47,7 +47,7 @@ function Games(){
             </div>
             <div className='GamesListContainer'>
                 <ul className="GamesList">
-                    {list.map((game, index) => <Game name={game.name} imageUrl={game.cover} url={game.url}/>)}
+                    {list.map((game, index) => <Game name={game.name} imageUrl={game.cover} url={game.url} height="352px" width="264px"/>)}
                 </ul>
             </div>
         </div>
