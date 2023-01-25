@@ -12,6 +12,8 @@ const cors = require("cors");
 // Imports routes for the backend api
 const router = require("./routes/router");
 
+// Serve react app on server
+app.use(express.static("../../Frontend/build"))
 
 // Parsing request body and enabling cors
 // Default options
