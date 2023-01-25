@@ -4,11 +4,22 @@ const axios = require("axios");
 // Library used to read .env file ("File is not accesible however it contains API keys")
 require("dotenv").config()
 
+// Function used in our API to pull games
 exports.getGames = async (req, res, next) => {
     try {
+        // Calls retrieve games function which does all the processing to get the games
+        const games = await this.retrieveGames();
+        // Sends response with data pulled from API and filtered
+        res.send(games)
+    } catch (error) {
+        next(error);
+    }
+}
+
+exports.retrieveGames = async () => {
         // Calls the IGDB API with specific parameters
         // Requests the name, cover art, website url, game modes, ratings and genres of the games
-        // Only requests games with a rating/aggregated rating of 85 or above, 
+        // Only requests games with a rating/aggregated rating of 73 or above, 
         // as well as games that are released past 2005, and are considered the main game (Excludes dlcs, extra content, etc...)
         // Will pull 500 games from the site
         const games = await axios({
@@ -19,7 +30,7 @@ exports.getGames = async (req, res, next) => {
                 "Client-ID": process.env.IGDB_CLIENT_ID,
                 "Authorization": `Bearer ${process.env.IGDB_ACCESS_TOKEN}`,
             },
-            data: "fields name, cover, url, genres, rating, aggregated_rating, game_modes; where aggregated_rating >= 80 & rating >= 80 & category = 0 & first_release_date > 1104555600 & themes != 42; sort rating desc; limit 500;"
+            data: "fields name, cover, url, genres, rating, aggregated_rating, game_modes; where aggregated_rating >= 73 & rating >= 73 & game_modes = (1, 2) & category = 0 & first_release_date > 1104555600 & genres != (2, 4, 7, 8, 9, 11, 15, 16, 24, 26, 30, 32, 33, 34, 35, 36) & genres = (5, 10, 12, 13, 14, 25, 31) & themes != 42; sort rating desc; limit 500;"
             
         });
 
@@ -59,11 +70,7 @@ exports.getGames = async (req, res, next) => {
                 if(cover.game === game.id) game.cover = cover.url
             })
         })
-        
-        // Sends response with data pulled from API and filtered
-        res.send(games.data)
-    } catch (error) {
-        next(error);
-    }
+
+        return games.data;
 }
 

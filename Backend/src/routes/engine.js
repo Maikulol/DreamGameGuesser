@@ -5,7 +5,7 @@ const router = require("express").Router();
 const engine = require("../controllers/engine")
 
 // Calls the function to process the user inputs
-router.get("/", engine.computeResult)
+router.post("/", engine.computeResult)
 
 const gamesRouter = router;
 module.exports = gamesRouter;

@@ -4,6 +4,7 @@ import { useState } from 'react'
 import EngineButton from './EngineButton';
 import { useEffect } from 'react';
 import Game from './Game';
+import axios from 'axios';
 
 // The entire engine page
 function Engine(){
@@ -54,6 +55,7 @@ function Engine(){
     const [leftText, setLeftText] = useState(answerSet1.get(questionCount));
     const [rightText, setRightText] = useState(answerSet2.get(questionCount));
     const [end, setEnd] = useState(false);
+    const [newList, setNewList] = useState([]);
 
     // Changes the question and buttons on screen according to the questionCount
     const updateScreen = () => {
@@ -105,30 +107,19 @@ function Engine(){
         
         updateScreen();
     }, [questionCount])
-    
-    console.log(questionCount)
-    // console.log(userInput)
-    const NewFilteredList = [
-        {
-            name: "COCK",
-            url: "https://twitter.com/home?lang=en",
-            cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co4ymo.png"
-        },
-        {
-            name: "COCK",
-            url: "https://twitter.com/home?lang=en",
-            cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co4ymo.png"
-        },{
-            name: "COCK",
-            url: "https://twitter.com/home?lang=en",
-            cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co4ymo.png"
-        },{
-            name: "COCK",
-            url: "https://twitter.com/home?lang=en",
-            cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co4ymo.png"
-        }
-    ]
 
+    // Makes API call to backend to process inputs
+    const getOutput = async () => {
+        const result = await axios.post("http://localhost:8080/engine", Object.fromEntries(userInput))
+        setNewList(result.data);
+    }
+
+
+    // Once the question phase is over, send input data to backend
+    useEffect(() => {
+        if(end == true) getOutput();
+    }, [end])
+    
     // Engine buttons and Engine text are both made to be updated with the functions written above
     // Both buttons when clicked will trigger the next questions by calling the goToNextQuestion function
     return(
@@ -154,7 +145,7 @@ function Engine(){
                         <div className='EngineOutput'>
                             <h1 className='EngineOutputTitle'>Games tailored for you!</h1>
                             <ul className="EngineOutputGames">
-                                {NewFilteredList.map((game, index) => <Game name={game.name} imageUrl={game.cover} url={game.url} width="200px"/>)}
+                                {newList.map((game, index) => <Game name={game.name} imageUrl={game.cover} url={game.url} width="200px"/>)}
                             </ul>
                         </div>
                     }

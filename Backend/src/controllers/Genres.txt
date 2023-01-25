@@ -1,3 +1,5 @@
+All of the genres from IGDB pulled from its API
+
 [
     {
         "id": 4,
