@@ -1,6 +1,6 @@
-import '../styles/Engine.css'
-import robot from '../assets/enginerobot.gif'
-import { useState } from 'react'
+import '../styles/Engine.css';
+import robot from '../assets/enginerobot.gif';
+import { useState } from 'react';
 import EngineButton from './EngineButton';
 import { useEffect } from 'react';
 import Game from './Game';
