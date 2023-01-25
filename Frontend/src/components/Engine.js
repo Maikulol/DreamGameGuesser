@@ -1,5 +1,5 @@
 import '../styles/Engine.css';
-import robot from '../assets/enginerobot.gif';
+import robot from './robot.gif';
 import { useState } from 'react';
 import EngineButton from './EngineButton';
 import { useEffect } from 'react';
