@@ -16,7 +16,7 @@ function Games(){
     // Makes API call from frontend to backend to retrieve array of games
     // Updates the state to store the array of games
     const fetchGames = async () => {
-        const result = await axios.get("http://localhost:8080/games")
+        const result = await axios.get("http://96.58.110.215:8080/games")
         setFullList(result.data)
     }
 

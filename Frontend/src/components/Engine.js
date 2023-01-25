@@ -110,7 +110,7 @@ function Engine(){
 
     // Makes API call to backend to process inputs
     const getOutput = async () => {
-        const result = await axios.post("http://localhost:8080/engine", Object.fromEntries(userInput))
+        const result = await axios.post("http://96.58.110.215:8080/engine", Object.fromEntries(userInput))
         setNewList(result.data);
     }
 
