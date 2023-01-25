@@ -6,6 +6,9 @@ const express = require("express");
 // Creates "app"
 const app = express();
 
+// Import node path module
+const path = require("path");
+
 // Imports cors "Cross-Origin Resource Sharing"
 const cors = require("cors");
 
@@ -13,7 +16,7 @@ const cors = require("cors");
 const router = require("./routes/router");
 
 // Serve react app on server
-app.use(express.static("../../Frontend/build"))
+app.use(express.static(path.join(__dirname, '../../Frontend/build')))
 
 // Parsing request body and enabling cors
 // Default options
